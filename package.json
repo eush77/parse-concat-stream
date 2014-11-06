@@ -1,6 +1,6 @@
 {
   "name": "parse-concat-stream",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "concat-stream + JSON.parse + callback interface and custom parsers",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
@@ -21,7 +21,8 @@
     "parse",
     "json",
     "writable",
-    "callback"
+    "callback",
+    "parser"
   ],
   "dependencies": {
     "concat-stream": "^1.4.6",
