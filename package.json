@@ -4,6 +4,9 @@
   "description": "concat-stream + JSON.parse",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "mocha --require should test"
+  },
   "homepage": "https://github.com/eush77/parse-concat-stream",
   "repository": {
     "type": "git",
@@ -20,6 +23,13 @@
     "writable",
     "callback"
   ],
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "concat-stream": "^1.4.6",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.1.0",
+    "stread": "0.0.2"
+  }
 }
