@@ -32,13 +32,13 @@ it('should propagate the error', function (done) {
 
 it('should accept custom parsers', function (done) {
   var caps = function (string) {
-    return (string.match(/[A-Z]/g) || []).join('');
+    return (string.match(/[A-Z]/g) || []).join('').toLowerCase();
   };
 
   stread('   {\nMEdiS]]\n} SorAs    \tGEt')
     .pipe(parseConcat({ parse: caps }, function (err, result) {
       (err == null).should.be.true;
-      result.should.equal('MESSAGE');
+      result.should.equal('message');
       done();
     }));
 });
