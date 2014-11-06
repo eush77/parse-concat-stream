@@ -1,0 +1,25 @@
+{
+  "name": "parse-concat-stream",
+  "version": "0.0.0",
+  "description": "concat-stream + JSON.parse",
+  "author": "Eugene Sharygin <eush77@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/eush77/parse-concat-stream",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eush77/parse-concat-stream"
+  },
+  "bugs": {
+    "url": "https://github.com/eush77/parse-concat-stream/issues"
+  },
+  "keywords": [
+    "stream",
+    "concat",
+    "parse",
+    "json",
+    "writable",
+    "callback"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
