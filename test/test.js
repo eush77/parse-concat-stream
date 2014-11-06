@@ -28,3 +28,17 @@ it('should propagate the error', function (done) {
       done();
     }));
 });
+
+
+it('should accept custom parsers', function (done) {
+  var caps = function (string) {
+    return (string.match(/[A-Z]/g) || []).join('');
+  };
+
+  stread('   {\nMEdiS]]\n} SorAs    \tGEt')
+    .pipe(parseConcat({ parse: caps }, function (err, result) {
+      (err == null).should.be.true;
+      result.should.equal('MESSAGE');
+      done();
+    }));
+});
