@@ -1,4 +1,4 @@
-# regex-format [![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david] [![DevDependency Status][david-dev-badge]][david-dev]
+# parse-concat-stream [![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david] [![DevDependency Status][david-dev-badge]][david-dev]
 
 [![npm](https://nodei.co/npm/parse-concat-stream.png)](https://nodei.co/npm/parse-concat-stream/)
 
