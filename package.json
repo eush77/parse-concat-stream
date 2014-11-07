@@ -16,11 +16,11 @@
     "url": "https://github.com/eush77/parse-concat-stream/issues"
   },
   "keywords": [
-    "stream",
     "concat",
-    "parse",
-    "json",
     "writable",
+    "stream",
+    "json",
+    "parse",
     "callback",
     "parser"
   ],
