@@ -50,7 +50,14 @@ Return a writable stream, run `cb` once it closes.
 
 `data` is `JSON.parse`d by default, unless custom `opts.parse` is provided.
 
-`null` is a shorthand for the identity function, so that `parseConcat({ parse: null }, cb)` is equivalent to `require('concat-stream')({ encoding: 'string' }, cb.bind(null, null))`.
+`null` is a shorthand for the identity function, so that
+```
+parseConcat({ parse: null }, cb);
+```
+is equivalent to
+```
+require('concat-stream')({ encoding: 'string' }, cb.bind(null, null));
+```
 
 | Option | Type             | Required? | Default      |
 | :------| :--------------- | :-------: | :----------- |
