@@ -7,10 +7,18 @@ var concat = require('concat-stream')
 module.exports = function (opts, cb) {
   if (typeof opts == 'function') {
     cb = opts;
-    opts = null;
+    opts = {};
   }
-  opts = opts || {};
-  opts.parse = opts.parse || JSON.parse;
+  else {
+    opts = opts || {};
+  }
+
+  if (opts.parse === undefined) {
+    opts.parse = JSON.parse;
+  }
+  else if (opts.parse === null) {
+    opts.parse = function (s) { return s; };
+  }
 
   var input = through();
 

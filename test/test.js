@@ -42,3 +42,13 @@ it('should accept custom parsers', function (done) {
       done();
     }));
 });
+
+
+it('should treat `null` as the identity parser', function (done) {
+  stread('message')
+    .pipe(parseConcat({ parse: null }, function (err, data) {
+      (err == null).should.be.true;
+      data.should.equal('message');
+      done();
+    }));
+});
